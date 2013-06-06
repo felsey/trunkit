@@ -1,4 +1,10 @@
 Trunkit::Application.routes.draw do
+  get 'signin' => 'pages#signin'
+
+  get 'signup' => 'pages#signup'
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
